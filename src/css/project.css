@@ -1,0 +1,68 @@
+.project {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 100%;
+}
+
+.websites {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+}
+
+
+.heading-project {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.websites li {
+    list-style: none;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.websites a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.websites-img {
+    background-color: azure;
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+    backdrop-filter: blur(300px);
+     -webkit-backdrop-filter: blur(50px);
+     opacity: 0.5;
+     border-radius: 1rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .project {
+        margin-top: 20vh;
+    }
+
+
+    .websites a {
+        font-size: 1.3rem;
+    }
+
+    .websites a:hover {
+        font-weight: 500;
+    }
+
+    .websites {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10vh;
+        justify-content: center;
+    }
+
+    .websites li {
+        width: 30%;
+    }
+}

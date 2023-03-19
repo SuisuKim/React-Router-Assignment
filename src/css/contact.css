@@ -1,0 +1,89 @@
+.contact {
+    margin-top: 10vh;
+}
+
+.heading-contact {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.contact-para {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+input, textarea {
+    border: none;
+    background-color: azure;
+    width: 100%;
+    margin-top: 1.8rem;
+    border-radius: 0.8rem;
+    opacity: 0.5;
+}
+
+.submit {
+    background-color: #fff;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.field-holder {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top:1.8rem;
+    left: .5rem;
+    transition: .1s ease;
+}
+
+input {
+    height: 2rem;
+}
+
+input, textarea:focus {
+    outline: none;
+}
+
+/* Focused */
+input:focus + label, 
+textarea:focus + label {
+    top: 0.5rem;
+    font-size: 0.8rem;
+    margin:0;
+    padding:0;  
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .contact {
+        margin-top: 20vh;
+        width: 40%;
+        margin: 20vh auto;
+        text-align: center;
+    }
+
+
+    .contact-para {
+        width: 90%;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+
+}

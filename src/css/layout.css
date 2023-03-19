@@ -1,0 +1,118 @@
+:root {
+  --background-color:#fff;
+  --pink: #efb2c5;
+  --blue: #76cfe7;
+  --text: #1c1c1c;
+  --gradient: linear-gradient(45deg,
+  #efb2c5,
+  #fff,
+  #76cfe7
+
+  )
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* nav */
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(-100vh);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(300px);
+}
+
+.responsive_nav {
+  transform: none;
+}
+
+nav a.active {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+  padding:0;
+
+}
+
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em 2em;
+  flex:1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 400;
+}
+
+/* nav button */
+.nav-btn {
+  padding:0;
+  margin-top: 1.2rem;  
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+}
+
+.nav-close-btn {
+  position:absolute;
+  top: 0;
+  right: 1rem; 
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  nav {
+    transform: none;
+    padding-left: 5 rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    margin: 1rem;
+    gap: 3rem;
+    font-size: 1.3rem;
+  }
+
+  nav ul li {
+    flex:0; 
+  }
+}
+
